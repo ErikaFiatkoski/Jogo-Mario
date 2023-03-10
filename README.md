@@ -12,7 +12,9 @@ Link do vídeo: https://www.youtube.com/watch?v=r9buAwVBDhA&list=PLBwC_iCf4d8oQD
 
 ## :clipboard: Sobre o projeto:
 
-* <p> O projeto consiste em uma única página html, onde ocorre o jogo. As animações foram configuradas através do CSS, enquanto que o "mecanismo" foi feito através do JavaScript.
+* <p> O projeto consiste em uma única página html, onde ocorre o jogo. As animações foram configuradas através do CSS, enquanto que o mecanismo foi feito através do JavaScript.
+
+* <p> O posicionamento dos elementos na página foi feito através do framework Bootstrap.
 
 
 
