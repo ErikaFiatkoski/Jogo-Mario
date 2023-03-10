@@ -2,7 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/*Variáveis*/
 
+:root {
+    --cor-tema: #981e0b;
+    --bordas: #217fa4;
+
+}
 
 
 /*GERAL*/
@@ -20,17 +26,14 @@ body {
 }
 
 
-
-
 /*TOPO TELA*/
-
 
 .tituloPrincipal {
     text-align: center;
     font-family: 'Righteous', cursive;
     font-size: 7em;
     font-weight: 100;
-    color: #981e0b;
+    color: var(--cor-tema);
     text-decoration: underline;
     text-shadow:
         -2px -2px 0px #4D2D12,
@@ -41,35 +44,6 @@ body {
 }
 
 
-
-/*MEIO TELA*/
-
-.meio {
-    position: relative;
-    align-content: space-around;
-
-}
-
-#marioesq {
-    opacity: 35%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*TELA DO JOGO*/
 
 
@@ -77,11 +51,9 @@ body {
     width: 40em;
     height: 25em;
     border-bottom: 15px solid rgb(35, 160, 35);
-    border-top: 10px solid #981e0b;
-    border-left: 10px solid #981e0b;
-    border-right: 10px solid #981e0b;
-
-
+    border-top: 10px solid var(--bordas);
+    border-left: 10px solid var(--bordas);
+    border-right: 10px solid var(--bordas);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -112,6 +84,8 @@ body {
     position: absolute;
     animation: clouds-animation 20s infinite linear;
 }
+
+
 
 /*ANIMAÇÕES*/
 
@@ -160,26 +134,39 @@ body {
 }
 
 
-/*RODAPÉ*/
+/*Detalhes Background*/
 
-footer {
 
-    bottom: 0;
-    background-color: #981e0b;
-    color: black;
-    width: 100%;
-    height: 100px;
-    text-align: center;
+.fundoEsquerdo {
+    width: 8em;
+    filter: sepia(77%) opacity(40%);
+    margin-top: 16em;
 }
 
-footer p {
+.fundoDireito {
+    width: 8em;
+    filter: sepia(77%) opacity(40%);
+    margin-left: 8em;
+    margin-top: 1em;
+}
+
+
+/*RODAPÉ*/
+
+.rodape {
+    
+    text-align: center;
+    bottom: 0;
+    background-color: var(--cor-tema);
+    
+}
+
+
+footer p, a {
 color: whitesmoke;
 }
 
-footer a {
-    color: whitesmoke;
+footer a:hover {
+    color: #0b9848;
+    font-size: 1.5em;
 }
-
-
-
-
